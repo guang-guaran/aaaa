@@ -24,10 +24,11 @@ iframe {
 /* 左侧用户信息模块 */
 
 .layui-side-scroll .userInfo {
-  height: 60px;
-  line-height: 60px;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
   border-bottom: 1px solid #22262e;
+  font-size: 12px;
 }
 
 .userText {
