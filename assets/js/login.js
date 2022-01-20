@@ -68,8 +68,11 @@ jQuery(function () {
       layer.msg('恭喜您！登录成功')
       // 保存登录令牌
       localStorage.setItem('token', res.token)
-      // 登录成功,跳转至主页
-      location.href = '/index.html'
+      // 搞个定时器
+      setTimeout(() => {
+        // 登录成功,跳转至主页
+        location.href = '/index.html'
+      }, 1000);
     });
   })
 
