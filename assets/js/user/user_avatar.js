@@ -50,9 +50,9 @@ jQuery(function () {
       data: res
     }) => {
       // console.log(res)
-      if (res.status !== 0) {
-        return layer.msg(res.message)
-      }
+      // if (res.status !== 0) {
+      //   return layer.msg(res.message)
+      // }
       layer.msg('恭喜您！上传头像成功')
       window.parent.getUserInfo()
     });

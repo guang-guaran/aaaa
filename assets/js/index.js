@@ -27,9 +27,9 @@ function getUserInfo() {
     data: res
   }) => {
     // console.log(res)
-    if (res.status !== 0) {
-      return layer.meg(res.message)
-    }
+    // if (res.status !== 0) {
+    //   return layer.msg(res.message)
+    // }
 
     // 成功获取了用户的信息渲染到页面
     renderAvatar(res.data)

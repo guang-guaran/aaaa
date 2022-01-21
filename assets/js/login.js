@@ -42,9 +42,9 @@ jQuery(function () {
       data: res
     }) => {
       // console.log(res)
-      if (res.status !== 0) {
-        return layer.msg(res.message)
-      }
+      // if (res.status !== 0) {
+      //   return layer.msg(res.message)
+      // }
       layer.msg('恭喜您！用户注册成功')
       $('.reg-box a').click()
       $('#regForm')[0].reset()
@@ -62,9 +62,9 @@ jQuery(function () {
       data: res
     }) => {
       // console.log(res.token)
-      if (res.status !== 0) {
-        return layer.msg(res.message)
-      }
+      // if (res.status !== 0) {
+      //   return layer.msg(res.message)
+      // }
       layer.msg('恭喜您！登录成功')
       // 保存登录令牌
       localStorage.setItem('token', res.token)

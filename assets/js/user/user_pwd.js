@@ -31,9 +31,9 @@ jQuery(function () {
       data: res
     }) => {
       // console.log(res)
-      if (res.status !== 0) {
-        return layer.msg(res.message)
-      }
+      // if (res.status !== 0) {
+      //   return layer.msg(res.message)
+      // }
       layer.msg('恭喜您！密码修改成功')
       $('#cfmPwdForm')[0].reset()
       // 销毁token 跳转到登录页面

@@ -20,9 +20,9 @@ jQuery(function () {
       data: res
     }) => {
       // console.log(res)
-      if (res.status !== 0) {
-        return layer.msg(res.message)
-      }
+      // if (res.status !== 0) {
+      //   return layer.msg(res.message)
+      // }
       // 获取用户的信息赋值给form表单  layui的赋值方法 form.val('lay-filter="form表单这个属性值", 赋值内容')
       form.val('userinfoForm', res.data)
     });
@@ -45,9 +45,9 @@ jQuery(function () {
       data: res
     }) => {
       // console.log(res)
-      if (res.status !== 0) {
-        return layer.msg(res.message)
-      }
+      // if (res.status !== 0) {
+      //   return layer.msg(res.message)
+      // }
       // window 为当前user页面 .parent才能找到父元素index里的getUserInfo方法
       window.parent.getUserInfo()
     });

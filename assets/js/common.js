@@ -22,6 +22,10 @@ axios.interceptors.response.use(function (response) {
     // 并且销毁token令牌
     localStorage.removeItem('token')
   }
+  // 向服务器请求成功返回信息提示
+  if (response.data.status !== 0) {
+    return layer.msg(response.data.message)
+  }
   return response
 }, function (error) {
   return Promise.reject(error)
